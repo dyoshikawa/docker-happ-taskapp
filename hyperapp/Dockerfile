@@ -27,7 +27,7 @@ ADD style.scss src/scss/style.scss
 
 RUN npm install --save-dev webpack babel-cli babel-preset-env babel-plugin-transform-react-jsx \
                            babel-loader node-sass jest babel-jest regenerator-runtime \
- && npm install --save hyperapp bootstrap
+ && npm install --save hyperapp bootstrap popper.js jquery
 
 # build js and sass
 RUN npm run build
