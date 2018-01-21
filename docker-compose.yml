@@ -1,0 +1,10 @@
+version: '3'
+services:
+  hpp-taskapp:
+    build:
+      context: ./happ-taskapp
+    container_name: happ-taskapp
+    volumes:
+      - ./volumes/happ-taskapp.var-www-taskapp:/var/www/taskapp
+    ports:
+      - "8000:80"
