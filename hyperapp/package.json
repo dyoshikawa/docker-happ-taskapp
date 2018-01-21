@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest",
     "build-js": "./node_modules/.bin/webpack -p",
     "watch-js": "./node_modules/.bin/webpack --watch",
     "build-sass": "node-sass --include-path scss ./src/scss/style.scss ./dist/style.css --output-style compressed",

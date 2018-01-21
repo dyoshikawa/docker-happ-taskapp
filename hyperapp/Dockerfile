@@ -25,8 +25,9 @@ ADD index.html index.html
 ADD main.js src/js/main.js
 ADD style.scss src/scss/style.scss
 
-RUN npm install --save-dev webpack babel-cli babel-preset-env babel-plugin-transform-react-jsx babel-loader node-sass \
- && npm install --save hyperapp bootstrap-sass
+RUN npm install --save-dev webpack babel-cli babel-preset-env babel-plugin-transform-react-jsx \
+                           babel-loader node-sass jest babel-jest regenerator-runtime \
+ && npm install --save hyperapp bootstrap
 
 # build js and sass
 RUN npm run build

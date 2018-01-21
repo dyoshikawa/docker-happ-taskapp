@@ -1,10 +1,10 @@
 version: '3'
 services:
-  hpp-taskapp:
+  hyperapp:
     build:
-      context: ./happ-taskapp
-    container_name: happ-taskapp
+      context: ./hyperapp
+    container_name: hyperapp
     volumes:
-      - ./volumes/happ-taskapp.var-www-taskapp:/var/www/taskapp
+      - ./volumes/happ.var-www-taskapp:/var/www/happ
     ports:
       - "8000:80"
