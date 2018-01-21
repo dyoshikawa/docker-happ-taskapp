@@ -1,2 +1,2 @@
 .idea
-volumes/*
+volumes/happ.var-www-taskapp/node_modules/
